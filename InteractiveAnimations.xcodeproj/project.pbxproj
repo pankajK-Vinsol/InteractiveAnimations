@@ -14,6 +14,7 @@
 		460876FD2282F42E00642F79 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 460876FB2282F42E00642F79 /* LaunchScreen.storyboard */; };
 		460877082282F42E00642F79 /* InteractiveAnimationsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 460877072282F42E00642F79 /* InteractiveAnimationsTests.swift */; };
 		460877132282F42E00642F79 /* InteractiveAnimationsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 460877122282F42E00642F79 /* InteractiveAnimationsUITests.swift */; };
+		460877232283F91E00642F79 /* unsplash.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 460877222283F91E00642F79 /* unsplash.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		4608770E2282F42E00642F79 /* InteractiveAnimationsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InteractiveAnimationsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		460877122282F42E00642F79 /* InteractiveAnimationsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InteractiveAnimationsUITests.swift; sourceTree = "<group>"; };
 		460877142282F42E00642F79 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		460877222283F91E00642F79 /* unsplash.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = unsplash.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 				460876F92282F42E00642F79 /* Assets.xcassets */,
 				460876FB2282F42E00642F79 /* LaunchScreen.storyboard */,
 				460876FE2282F42E00642F79 /* Info.plist */,
+				460877222283F91E00642F79 /* unsplash.jpg */,
 			);
 			path = InteractiveAnimations;
 			sourceTree = "<group>";
@@ -230,6 +233,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				460876FD2282F42E00642F79 /* LaunchScreen.storyboard in Resources */,
+				460877232283F91E00642F79 /* unsplash.jpg in Resources */,
 				460876FA2282F42E00642F79 /* Assets.xcassets in Resources */,
 				460876F82282F42D00642F79 /* Main.storyboard in Resources */,
 			);
