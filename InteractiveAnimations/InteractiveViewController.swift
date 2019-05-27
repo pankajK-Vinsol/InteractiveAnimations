@@ -32,7 +32,7 @@ class InteractiveViewController: UIViewController {
     private var currentState: State = .closed
     private var runningAnimators = [UIViewPropertyAnimator]()
     private var animationProgress = [CGFloat]()
-    private let popupOffset: CGFloat = 440.0
+    private let popupOffset: CGFloat = 470.0
     private var bottomConstraint = NSLayoutConstraint()
     
     private lazy var popupView: UIView = {
@@ -77,7 +77,7 @@ class InteractiveViewController: UIViewController {
         view.addSubview(popupView)
         popupView.leadingAnchor.constraint(equalTo: view.leadingAnchor).isActive = true
         popupView.trailingAnchor.constraint(equalTo: view.trailingAnchor).isActive = true
-        bottomConstraint = popupView.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: popupOffset)
+        bottomConstraint = popupView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: popupOffset)
         bottomConstraint.isActive = true
         popupView.heightAnchor.constraint(equalToConstant: 500).isActive = true
         
@@ -101,14 +101,13 @@ class InteractiveViewController: UIViewController {
     }()
     
     private func animateTransitionIfNeeded(to state: State, duration: TimeInterval) {
-        
         guard runningAnimators.isEmpty else { return }
         let transitionAnimator = UIViewPropertyAnimator(duration: duration, dampingRatio: 1, animations: {
             switch state {
             case .open:
                 self.bottomConstraint.constant = 0
                 self.popupView.layer.cornerRadius = 20
-                self.closedTitleLabel.transform = CGAffineTransform(scaleX: 1.6, y: 1.6).concatenating(CGAffineTransform(translationX: 0, y: 15))
+                self.closedTitleLabel.transform = CGAffineTransform(scaleX: 1.5, y: 1.5).concatenating(CGAffineTransform(translationX: 0, y: 15))
                 self.openTitleLabel.transform = .identity
                 self.contentImageView.addBlurEffect()
                 
